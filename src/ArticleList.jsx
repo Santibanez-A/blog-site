@@ -2,14 +2,14 @@
 import Article from "./Article";
 
 // articles: {tite, date, preview}[]
-function ArticleList({posts}) {
+function ArticleList({ posts }) {
     return (
 
     <main>
          
         {posts.map((post) => 
                 <Article key={post.id} 
-                    name={post.title}
+                    title={post.title}
                     date={post.date}
                     preview={post.preview}>
 

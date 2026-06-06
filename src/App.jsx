@@ -3,7 +3,7 @@ import About from "./About";
 import ArticleList from "./ArticleList";
 
 function App() {
-  const articles = [
+  const posts = [
     {
       id: 1,
       title: "First Post",
@@ -19,7 +19,7 @@ function App() {
         image="https://via.placeholder.com/150"
         about="This is my blog."
       />
-      <ArticleList articles={articles} />
+      <ArticleList posts ={posts} />
     </>
   );
 }

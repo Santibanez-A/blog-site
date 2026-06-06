@@ -1,19 +1,11 @@
-function Article({ title, date, preview }) {
-    return(
+function Article({ title, date = "January 1, 1970", preview }) {
+  return (
     <article>
-        <h3>
-            {title}
-        </h3>
-            
-        <small>
-            {date}
-        </small>
-        <p>
-            {preview}
-        </p>
-
+      <h3>{title}</h3>
+      <small>{date}</small>
+      <p>{preview}</p>
     </article>
-    );
+  );
 }
 
 export default Article;
